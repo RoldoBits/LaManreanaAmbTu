@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar  color = "danger">
+    <ion-buttons collapse="true" slot="start">
+      <ion-button (click)="toPage('home')" ><ion-icon name="arrow-undo-outline"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>El teu Book</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content slot="fixed">
+
+  <ion-list >
+    <ion-card>
+      <ion-card-header color = "danger">
+        <ion-card-title>
+          12/12/2021
+        </ion-card-title>
+        <ion-card-subtitle >
+          Vaig redescobrir records inolbidables
+        </ion-card-subtitle>
+      </ion-card-header>
+
+    </ion-card>
+    <ion-card>
+      <ion-card-header color = "danger">
+        <ion-card-title>
+          13/12/2021
+        </ion-card-title>
+        <ion-card-subtitle >
+          Una de les millors experiencies que mai he viscut
+        </ion-card-subtitle >
+      </ion-card-header>
+    </ion-card>
+  </ion-list>
+
+
+  <ion-item >
+    <ion-label position="stacked" color = "danger">Afegeix aqui el que vols guardar al teu llibre: </ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+</ion-content>

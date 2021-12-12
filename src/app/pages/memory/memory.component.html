@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar color = "secondary">
+    <ion-buttons collapse="true" slot="start">
+      <ion-button (click)="toPage('home')" ><ion-icon name="arrow-undo-outline"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>Memory</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content (onload) = "ngAfterViewInit()">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-thumbnail slot="start">
+            {{ test }}
+        </ion-thumbnail>
+      </ion-col>
+      <ion-col>
+        <div>2 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>3 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>4 of 4</div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>1 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>2 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>3 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>4 of 4</div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>1 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>2 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>3 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>4 of 4</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

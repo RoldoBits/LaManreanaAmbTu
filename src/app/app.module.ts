@@ -1,17 +1,31 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouteReuseStrategy } from '@angular/router';
 
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { IonicModule } from '@ionic/angular';
+import { MenuListComponent } from './menu-list/menu-list.component';
 
-import { AppComponent } from './app.component';
+
 import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
+import { environment } from '../environments/environment';
+import { FormsModule } from '@angular/forms';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { MemoryComponent } from './pages/memory/memory.component';
+import { Memoryv2Page } from './pages/memoryv2/memoryv2.page';
+
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
-  bootstrap: [AppComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    IonicModule.forRoot(),
+    
+  ],
+  declarations: [AppComponent, MenuListComponent,MemoryComponent, Memoryv2Page],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

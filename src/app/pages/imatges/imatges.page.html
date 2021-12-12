@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-toolbar color="tertiary">
+    <ion-buttons collapse="true" slot="start">
+      <ion-button (click)="toPage('home')" ><ion-icon name="arrow-undo-outline"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>Imatges</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        el Inici de la teva experiencia a la Manreana
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content >
+      <ion-img [src] = "inici" style="width: 40%; height: 40%;" style = "height: 70vh !important;
+      width: auto !important;
+      align-items: center;">
+      </ion-img>
+  </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Ho recordes?
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content >
+      <ion-img [src] = "nus " style="width: 40%; height: 40%;" style = "height: 70vh !important;
+      width: auto !important;
+      align-items: center;"></ion-img>
+  </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        I aixi va acabar...
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content >
+      <ion-img [src] = "ultima" style="width: 40%; height: 40%;" style = "height: 70vh !important;
+      width: auto !important;
+      align-items: center;"></ion-img>
+  </ion-card-content>
+  </ion-card>
+</ion-content>
